@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pethouse",
+	"version": "${version}",
+	"name": "Pet house",
+	"description": "This is a mod about pet houses! :)",
+	"authors": [
+		"Jerry Snow5038"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pethouse/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.happysnowball.pethouse.PetHouse"
+		],
+		"client": [
+			"net.happysnowball.pethouse.PetHouseClient"
+		],
+		"fabric-datagen": [
+			"net.happysnowball.pethouse.PetHouseDataGenerator"
+		]
+	},
+	"mixins": [
+		"pethouse.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
