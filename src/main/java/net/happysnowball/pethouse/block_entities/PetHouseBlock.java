@@ -6,5 +6,5 @@ public abstract class PetHouseBlock extends Block {
     public PetHouseBlock(Settings settings) {
         super(settings);
     }
-
+    //test the change log
 }
